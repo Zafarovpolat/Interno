@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 400;
+    transition: all 300ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.btn {
+    width: 207px;
+    display: flex;
+    align-items: center;
+    border: none;
+    font-family: "Jost";
+    font-size: 0.9375rem;
+    letter-spacing: 0.72px;
+    color: #FFF;
+    border-radius: 15px;
+    background-color: #292F36;
+    padding: 11px 24px 11px 34px;
+}
+
+.btn i {
+    font-size: 50px;
+    margin-left: 20px;
+    color: #CDA274;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navbar {
+    padding: 13px 0px 9px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-list {
+    display: flex;
+    gap: 40px;
+}
+
+.page {
+    font-family: "Jost", sans-serif;
+    color: #292F36;
+    font-size: 1.25rem;
+    letter-spacing: 0.4px;
+}
+
+.page:hover {
+    text-decoration: underline;
+    color: #CDA274;
+}
+
+/* Showcase */
+
+.showcase {
+    margin-bottom: 100px;
+    background-image: url(./../media/header-img.png);
+    background-size: 100vw 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 75px;
+    height: 120vh;
+    border-bottom-left-radius: 270px;
+}
+
+.showcase-text {
+    width: 595px;
+    padding: 88px 0px 260px 0px;
+}
+
+.showcase-heading {
+    margin-bottom: 19px;
+    color: #292F36;
+    font-family: 'DM Serif Display', serif;
+    font-size: 5rem;
+    letter-spacing: 0.22px;
+}
+
+.showcase-info {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 35px;
+}
+
+/* Services */
+
+.services {
+    margin-bottom: 100px;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.services-card {
+    width: 400px;
+    padding: 75px 40px 70px 40px;
+    text-align: center;
+}
+
+.services-title {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 1.563rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 17px;
+}
+
+.services-info {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 68px;
+}
+
+.services-btn {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.125rem;
+    letter-spacing: 0.36px;
+}
+
+.services-btn:hover {
+    text-decoration: underline;
+}
+
+.services-btn i {
+    color: #CDA274;
+}
+
+/* Experience */
+
+.experience {
+    margin-bottom: 140px;
+}
+
+.experience .container {
+    display: flex;
+    gap: 16px;
+}
+
+.experience-left {
+    padding: 33px 0px 30px 0px;
+}
+
+.experience-heading {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 3.125rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 42px;
+}
+
+.experience-info {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 40px;
+}
+
+.experience-contact {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.5rem;
+    letter-spacing: 0.22px;
+}
+
+.experience-tel {
+    color: #4D5053;
+}
+
+.experience-btn {
+    width: 253px;
+}
+
+.experience-right {
+    background-color: cyan;
+    border-radius: 0px 330px 0px 130px;
+}
+
+.experience-right img {
+    height: 100%;
+}
+
+
+/* Commit */
+
+.commit {
+    margin-bottom: 140px;
+}
+
+.commit .container {
+    text-align: center;
+    background-color: #F4F0EC;
+    border-radius: 70px;
+    padding: 103px 51px 121px 51px;
+}
+
+.commit-heading {
+    width: 479px;
+    margin: 0 auto 47px auto;
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 2.813rem;
+    letter-spacing: 0.22px;
+}
+
+.commit-cards {
+    display: flex;
+    gap: 18px;
+}
+
+.commit-card {
+    width: 354px;
+    flex-direction: column;
+    border-radius: 30px;
+    background: #FFF;
+    display: flex;
+    padding: 50px 30px 45px 35px;
+}
+
+.commit-info {
+    text-align: left;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.commit-img {
+    margin-right: 20px;
+}
+
+.commit-name {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 1.563rem;
+    letter-spacing: 0.22px;
+}
+
+.commit-location {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.125rem;
+    letter-spacing: 0.22px;
+}
+
+.commit-text {
+    text-align: left;
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.25rem;
+    letter-spacing: 0.22px;
+}
+
+/* Brands */
+
+.brands {
+    margin-bottom: 100px;
+}
+
+.brands-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Projects */
+
+.projects {
+    margin-bottom: 80px;
+}
+
+.projects .container {
+    text-align: center;
+}
+
+.projects-up {
+    width: 786px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.projects-heading {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 2.938rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 20px;
+}
+
+.projects-info {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+}
+
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 20px;
+}
+
+.projects-card {
+    border-top-right-radius: 80px;
+}
+
+.projects-img {
+    margin-bottom: 24px;
+}
+
+.projects-text {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-left {
+    text-align: left;
+}
+
+.projects-title {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 1.5rem;
+    letter-spacing: 0.22px;
+}
+
+.projects-subtitle {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+}
+
+.projects-btn {
+    border-radius: 100px;
+    border: none;
+}
+
+.projects-btn:hover {
+    cursor: pointer;
+}
+
+.projects-btn:active {
+    transform: scale(0.95);
+}
+
+/* Achievements */
+
+.achievements {
+    margin-bottom: 142px;
+    background-color: #F4F0EC;
+}
+
+.achievements-list {
+    padding: 140px 0px;
+    display: flex;
+    gap: 15px;
+}
+
+.achievements-item {
+    width: 288px;
+    padding: 14px 0px 10px 0px;
+    text-align: center;
+    border-right: 1px solid #CDA274;
+}
+
+.achievements-title {
+    color: #CDA274;
+    font-family: "DM Serif Display";
+    font-size: 5.313rem;
+    letter-spacing: 1.7px;
+    margin-bottom: 10px;
+}
+
+.achievements-subtitle {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+}
+
+/* Blogs */
+
+.blogs {
+    margin-bottom: 140px;
+}
+
+.blogs .container {
+    text-align: center;
+}
+
+.blogs-up {
+    width: 589px;
+    margin: 0 auto 70px auto;
+}
+
+.blogs-heading {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 3rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 21px;
+}
+
+.blogs-info {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+}
+
+.blogs-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 19px;
+}
+
+.blogs-card {
+    text-align: left;
+    padding: 21px 21px 40px 21px;
+    width: 387px;
+    border-radius: 62px;
+    border: 1px solid #E7E7E7;
+}
+
+.blogs-card::marker {
+    content: none;
+}
+
+.blogs-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.blogs-type {
+    color: #4D5053;
+    font-family: "Jost";
+    padding: 9px 10px;
+    border-radius: 8px 8px 8px 0px;
+    background: #FFF;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 0.22px;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.blogs-title {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 1.563rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.blogs-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogs-date {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1rem;
+    letter-spacing: 0.22px;
+}
+
+.blogs-btn {
+    border-radius: 100px;
+    border: none;
+}
+
+.blogs-btn:hover {
+    cursor: pointer;
+}
+
+.blogs-btn:active {
+    transform: scale(0.95);
+}
+
+.blogs-btn img {
+    width: 54px;
+    height: 54px;
+}
+
+/* Contact */
+
+.contact {
+    margin-bottom: 130px;
+}
+
+.contact-wrapper {
+    text-align: center;
+    border-radius: 70px;
+    background: #292F36;
+    padding: 100px 333px 95px 333px;
+}
+
+.contact-heading {
+    color: #FFF;
+    font-family: "DM Serif Display";
+    font-size: 3.125rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 9px;
+}
+
+.contact-info {
+    color: #FFF;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 31px;
+}
+
+.contact-btn {
+    width: 241px;
+    background-color: #CDA274;
+    margin: auto;
+}
+
+.contact-btn i {
+    color: #292F36;
+}
+
+/* Footer */
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    margin-bottom: 80px;
+    width: 393px;
+    text-align: left;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-info {
+    width: 326px;
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 30px;
+}
+
+.footer-media {
+    display: flex;
+    width: 181px;
+    justify-content: space-between;
+}
+
+.footer-media a {
+    color: #292F36;
+}
+
+.footer-right {
+    margin-bottom: 80px;
+    width: 790px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-pages {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right ul li {
+    margin-bottom: 30px;
+}
+
+.footer-right ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-right ul h4 {
+    color: #292F36;
+    font-family: "DM Serif Display";
+    font-size: 1.563rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 21px;
+}
+
+.footer-right ul li a {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+}
+
+.footer-right ul li a:hover {
+    color: #CDA274;
+}
+
+.footer-explore {
+    width: 210px;
+}
+
+.footer-contact {
+    width: 337px;
+}
+
+.footer-address {
+    margin-bottom: 30px;
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+}
+
+.footer-addres:last-child {
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid gray;
+    padding: 35px 220px;
+}
+
+.footer-rights {
+    color: #4D5053;
+    font-family: "Jost";
+    font-size: 1.375rem;
+    letter-spacing: 0.22px;
+}
+
+.footer-rights span {
+    color: #CDA274;
+}
